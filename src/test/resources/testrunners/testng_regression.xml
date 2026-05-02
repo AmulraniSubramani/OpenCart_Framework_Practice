@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Cart App Test automtion regression suite"
+	thread-count="4" parallel="tests" verbose="3">
+
+	<listeners>
+
+		<listener
+			class-name="hexaware.qa.opencart.liseners.ExtentReport_Listener" />
+		<listener
+			class-name="hexaware.qa.opencart.liseners.TestAllureListener" />
+
+		<listener
+			class-name="hexaware.qa.opencart.liseners.AnnotationTransformer"/>
+	</listeners>
+
+
+	<test name="Login Page Test">
+		<classes>
+
+			<class name="hexaware.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="Accounts Page Test">
+		<classes>
+
+			<class name="hexaware.qa.opencart.tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfo Page Test">
+		<classes>
+
+			<class name="hexaware.qa.opencart.tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+</suite>
