@@ -1,5 +1,6 @@
 package hexaware.qa.opencart.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CartPage {
@@ -15,6 +16,7 @@ public class CartPage {
 	
 	//By locators
 	
+	By addToCart= By.id("addtoCart");
 	public void togetTitle() {
 		System.out.println("cart page title");
 	}
