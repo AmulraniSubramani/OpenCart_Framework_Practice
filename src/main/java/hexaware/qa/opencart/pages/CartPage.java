@@ -17,6 +17,7 @@ public class CartPage {
 	//By locators
 	
 	By addToCart= By.id("addtoCart");
+	By addToCart1= By.id("addtoCart");
 	public void togetTitle() {
 		System.out.println("cart page title");
 	}
