@@ -59,6 +59,7 @@ public class DriverFactory {
 
 		} else if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
+			
 //			driver = new EdgeDriver(optionsManager.getEdgeOptions());
 			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 

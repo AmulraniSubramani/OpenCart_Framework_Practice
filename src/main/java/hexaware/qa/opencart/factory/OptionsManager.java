@@ -24,6 +24,9 @@ public class OptionsManager {
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) co.addArguments("--headless");
 
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) co.addArguments("--incognito");
+		co.addArguments("--remote-allow-origins=*");
+		co.addArguments("--no-sandbox");
+		co.addArguments("--disable-dev-shm-usage");
 
 		return co;
 		// either we can add if condition
@@ -43,6 +46,9 @@ public class OptionsManager {
 			fo.addArguments("--headless");
 		if (Boolean.parseBoolean(prop.getProperty("incognito")))
 			fo.addArguments("--incognito");
+		fo.addArguments("--remote-allow-origins=*");
+		fo.addArguments("--no-sandbox");
+		fo.addArguments("--disable-dev-shm-usage");
 		return fo;
 
 	}
@@ -53,6 +59,9 @@ public class OptionsManager {
 			eo.addArguments("--headless");
 		if (Boolean.parseBoolean(prop.getProperty("incognito")))
 			eo.addArguments("--incognito");
+		eo.addArguments("--remote-allow-origins=*");
+		eo.addArguments("--no-sandbox");
+		eo.addArguments("--disable-dev-shm-usage");
 		return eo;
 
 	}
